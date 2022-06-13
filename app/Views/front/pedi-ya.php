@@ -24,8 +24,7 @@
                 <div class="card-body">
                     <div id="venta">
                         <b> - <?php echo $producto['nombre_producto']?> - </b>
-                        <i> <?php echo $producto['descripcion_producto']?> ----------->
-                            $<?php echo $producto['precio_producto']?></i>
+                        <i> <?php echo $producto['descripcion_producto']?> $<?php echo $producto['precio_producto']?></i>
                         <!-- <div>
                                                                   <img src="assets/img/iconos/carrito-compras.svg" alt="">
                                                               </div> -->

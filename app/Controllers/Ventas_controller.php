@@ -17,44 +17,57 @@ class Ventas_controller extends BaseController{
         //if($_SERVER["REQUEST_METHOD"] == "POST"){
             $db = \Config\Database::connect();
             $cart = \Config\Services::cart();
-            $cart_qty = $cart->contents('qty');
-            $cart_price = $cart->contents('price');
+            $cebeza_model = new Vcabecera_Models();
+            $db->table('ventas_detalle');
+
+            $carton = $cart->contents();
             //$cartTotal = $cart('qty');
+            // $cebeza = $db->table('ventas_cabecera');
+            
             $id_vc = $db->table('ventas_cabecera');
             $id_vc = $db->query('SELECT id_venta_cabecera FROM ventas_cabecera LIMIT 1');
-
-            $id_prod = $db->table('productos');
-            $id_prod = $db->query('SELECT id_producto FROM productos LIMIT 1');
-
+            
+            // $cebeza = $cebeza_model->select('*')->join('ventas_cabecera','id_venta_cabecera = venta_id');
+            //$id_prod = $db->table('productos');
+            //$id_prod = $db->query('SELECT id_producto FROM productos LIMIT 1');
+            
             $id_session = $this->session = session()->get('id');
-            $id_vcc = $id_vc->getRowArray();
-            $id_produc = $id_prod->getRowArray();
-
+            //$id_vcc = $id_vc->getRowArray();
+            //$id_produc = $id_prod->getRowArray();
+            
             //$total = $this->$cart->total();
             //$cantidad = $cart->total_items();
-            $datos_vdetalle = [
-                'id_venta_detalle' => $this->request->getPostGet('id_venta_detalle'),
-                'venta_id' => $id_vcc['id_venta_cabecera'],
-                'producto_id' =>  $id_produc['id_producto'],
-                'cantidad_venta' => $cart_qty,
-                'precio_venta' => $cart_price,
-                'total_venta' => $cart->total(),
-
-            ];
-
-
-
+            
+            
             $datos_vcabaza = [
                 'id_venta_cabecera' => $this->request->getPostGet('id_venta_cabecera'),
                 'fecha_venta' => true,
                 'usuario_id' => $id_session,
                 'total_venta' => $cart->total(),
             ];
+            
+            //var_dump($cebeza_model->insert($datos_vcabaza));
+            $var = $cebeza_model->insert($datos_vcabaza);
+            foreach($carton as $c){
 
+                $datos_vdetalle = [
+                    'venta_id' => $var,
+                    'producto_id' =>  $c['id'],
+                    'cantidad_venta' => $c['qty'],
+                    'precio_venta' => $c['price'],
+    
+                ];
+                $db->table('ventas_detalle')->insert($datos_vdetalle);
 
-            $db->table('ventas_cabecera')->insert($datos_vcabaza);  $db->table('ventas_detalle')->insert($datos_vdetalle);
+            }
+
+            //var_dump($db->table('venta_detalle')->insert($datos_vdetalle));
+            //var_dump($cart_qty);
+            //var_dump($db->table('ventas_detalle')->insert($datos_vdetalle));
+            //$id_vc = $db->table('ventas_cabecera')->insert($datos_vcabaza);  $db->table('ventas_detalle')->insert($datos_vdetalle);
                 //mjs pantalla
-                 return redirect()->to(base_url().'/dashboard');
+
+              return redirect()->to(base_url().'/vaciar_carrito');
 
 
             
