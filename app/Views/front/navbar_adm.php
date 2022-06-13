@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
   		<div class="d-flex">
-    		<a class="navbar-brand" href="<?php echo base_url('pedi_ya');?>">Pedi YA!</a>
+    		<!-- <a class="navbar-brand" href="<?php echo base_url('pedi_ya');?>">Pedi YA!</a> -->
     		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       			<span class="navbar-toggler-icon"></span>
     		</button>

@@ -1,5 +1,5 @@
 <div class="container form-productos">
-    <h4 class="mt-4">EDITAR PRODUCTOS</h4>
+    <h2 class="mt-4">EDITAR PRODUCTOS</h4>
     <form method="POST" action="<?php echo base_url('actualizar_producto');?>" autocomplete="off">
 
         <input type="hidden" value=" <?php echo $datos['id_producto']; ?> "name="id_producto"/>
@@ -70,7 +70,7 @@
 
             </div>
             <br>
-            <a href=" <?php echo base_url('panel_producto'); ?> " class="btn btn-primary">VOLVER</a>
+            <a href=" <?php echo base_url('dashboard'); ?> " class="btn btn-primary">VOLVER</a>
             <button type="submit" class="btn btn-success">GUARDAR</button>
         </div>
     </form>

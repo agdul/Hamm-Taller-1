@@ -135,7 +135,7 @@ class Producto_controller extends BaseController{
             $productos = new Productos_models();
             $datos =array('datos' => $productos->where('id_producto',$this->request->getPostGet('id_producto'))->first());
     
-            return view('front/head', $data).('front/titulo_producto').view('front/navbar_adm').view('back/producto/editar_producto', $datos).view('front/footer');
+            return view('front/head', $data).view('front/titulo_panel_productos').view('front/navbar_adm').view('back/producto/editar_producto', $datos).view('front/footer');
         
     }
 

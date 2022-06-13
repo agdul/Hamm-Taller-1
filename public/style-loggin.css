@@ -54,3 +54,14 @@ form label{
 	color: white;
 }
 
+.container h3{
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	color: black;
+}
+
+.mb-3 label{
+	
+	font-family: 'Gloria Hallelujah', cursive;
+	color: black;
+}

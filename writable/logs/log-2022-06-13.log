@@ -595,3 +595,113 @@ CRITICAL - 2022-06-13 02:52:38 --> Array to string conversion
 #9 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2022-06-13 03:02:01 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 312, Array)
+#1 C:\xampp\htdocs\Hamm\system\Database\Query.php(312): implode(',', Array)
+#2 C:\xampp\htdocs\Hamm\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `ve...', Array)
+#3 C:\xampp\htdocs\Hamm\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\Hamm\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#6 C:\xampp\htdocs\Hamm\app\Controllers\Ventas_controller.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Ventas_controller->comprar()
+#8 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+#9 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-13 03:02:06 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 312, Array)
+#1 C:\xampp\htdocs\Hamm\system\Database\Query.php(312): implode(',', Array)
+#2 C:\xampp\htdocs\Hamm\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `ve...', Array)
+#3 C:\xampp\htdocs\Hamm\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\Hamm\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#6 C:\xampp\htdocs\Hamm\app\Controllers\Ventas_controller.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Ventas_controller->comprar()
+#8 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+#9 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-13 03:05:15 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 312, Array)
+#1 C:\xampp\htdocs\Hamm\system\Database\Query.php(312): implode(',', Array)
+#2 C:\xampp\htdocs\Hamm\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `ve...', Array)
+#3 C:\xampp\htdocs\Hamm\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\Hamm\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#6 C:\xampp\htdocs\Hamm\app\Controllers\Ventas_controller.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Ventas_controller->comprar()
+#8 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+#9 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-13 03:05:15 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 312, Array)
+#1 C:\xampp\htdocs\Hamm\system\Database\Query.php(312): implode(',', Array)
+#2 C:\xampp\htdocs\Hamm\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `ve...', Array)
+#3 C:\xampp\htdocs\Hamm\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\Hamm\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#6 C:\xampp\htdocs\Hamm\app\Controllers\Ventas_controller.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Ventas_controller->comprar()
+#8 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+#9 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-13 03:06:43 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 312, Array)
+#1 C:\xampp\htdocs\Hamm\system\Database\Query.php(312): implode(',', Array)
+#2 C:\xampp\htdocs\Hamm\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `ve...', Array)
+#3 C:\xampp\htdocs\Hamm\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\Hamm\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#6 C:\xampp\htdocs\Hamm\app\Controllers\Ventas_controller.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Ventas_controller->comprar()
+#8 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+#9 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-13 03:10:03 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#1 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#2 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-06-13 03:13:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), (), 0)' at line 1
+CRITICAL - 2022-06-13 03:13:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), (), 0)' at line 1
+#0 C:\xampp\htdocs\Hamm\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\Hamm\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Ventas_controller.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Ventas_controller->comprar()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-13 03:17:03 --> Invalid file: front/titulo_panel_producto.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/titulo_pa...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/titulo_pa...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(138): view('front/titulo_pa...')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->editar_producto()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-13 03:17:07 --> Invalid file: front/titulo_panel_producto.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/titulo_pa...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/titulo_pa...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(138): view('front/titulo_pa...')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->editar_producto()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-13 03:17:23 --> Invalid file: front/titulo_panel_producto.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/titulo_pa...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/titulo_pa...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(138): view('front/titulo_pa...')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->editar_producto()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -18,7 +18,7 @@
 					<a class="nav-link" id="nav3" href="<?php echo base_url('comercializacion_user');?>">Comercialización</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" id="nav3" href="<?php echo base_url('contacto_user');?>">Contacto</a>
+					<a class="nav-link" id="nav3" href="<?php echo base_url('contacto');?>">Contacto</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?php echo base_url('logout');?>">Cerrar Sesion</a>

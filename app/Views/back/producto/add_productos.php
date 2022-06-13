@@ -16,7 +16,7 @@
                     <?php endif; ?>
         <div class="card-header text-center">
 
-            <h2>Agregar Productos</h2>
+            <h3>Agregar Productos</h3>
         </div>
 
                     
@@ -106,7 +106,7 @@
                 </div>
 
                 <input type="submit" value="guardar" class="btn btn-success">
-                <input type="reset" value="cancelar" class="btn btn-danger">
+                <a href=" <?php echo base_url('dashboard'); ?> " class="btn btn-primary">VOLVER</a>
 
             </div>
         </form>

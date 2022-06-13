@@ -20,7 +20,7 @@
         <div class="card-group">
             <div class="card text-center">
                 <!-- <img src="<?php echo $producto['img_producto']?>" class="card-img-top" alt="Apolo" /> -->
-                <img width="400" src="<?php echo base_url('assets/uploads/'.$producto['img_producto'])?>">
+                <img width="500" src="<?php echo base_url('assets/uploads/'.$producto['img_producto'])?>">
                 <div class="card-body">
                     <div id="venta">
                         <b> - <?php echo $producto['nombre_producto']?> - </b>
