@@ -59,7 +59,6 @@
                      }
                         
                 }?>
-        
             
             <tr>
                 <th scope="row"><?php echo $consulta['id_consulta']; ?></th>

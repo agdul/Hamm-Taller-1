@@ -90,6 +90,9 @@ $routes ->group("/", ['filter'=> 'auth'], function($routes){
 
     $routes->get('/ver_carrito', 'Carrito_controller::ver_carrito');
     $routes->post('/ver_carrito', 'Carrito_controller::ver_carrito');
+
+    $routes->get('/comprar', 'Ventas_controller::comprar');
+    $routes->post('/comprar', 'Ventas_controller::comprar');
 });
 
 $routes->get('/', 'Home::index');

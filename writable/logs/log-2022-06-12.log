@@ -782,3 +782,32 @@ CRITICAL - 2022-06-12 19:10:41 --> Illegal string offset 'nombre'
 #7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+ERROR - 2022-06-12 20:00:25 --> Column 'usuario_id' cannot be null
+CRITICAL - 2022-06-12 20:00:25 --> Column 'usuario_id' cannot be null
+#0 C:\xampp\htdocs\Hamm\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\Hamm\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\Hamm\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Consulta_controller.php(36): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Consulta_controller->agregar_consulta()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consulta_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-12 20:24:39 --> Undefined index: categoria_producto
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(138): view('back/producto/e...', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->editar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-12 21:48:50 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+#0 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->agregar_carrito()
+#1 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#2 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

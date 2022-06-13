@@ -8,11 +8,11 @@
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <label> CATEGORIA </label>
-                    <input class="form-control" id="categoria_producto" name="categoria_producto" type="text" value="<?php echo $datos['categoria_producto']; ?>" autofocus> 
+                    <input class="form-control" id="descripcion_producto" name="descripcion_producto" type="text" value="<?php echo $datos['descripcion_producto']; ?>" autofocus> 
 
-                    <?php if(isset($errores ['categoria_producto'])) {?>
+                    <?php if(isset($errores ['descripcion_producto'])) {?>
                     <div class='alert alert-danger mt-2'>
-                        <?= $errores ['categoria_producto']?>
+                        <?= $errores ['descripcion_producto']?>
                     </div>
                     <?php }?>
                 </div>

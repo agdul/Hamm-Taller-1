@@ -4,11 +4,17 @@ use CodeIgniter\Controller;
 Use App\Models\Productos_models;
 
 class Carrito_controller extends BaseController{
+		public function __construct(){
+        helper(['form', 'url']);
+        //$this->consulta = new Carrito_models();
+        $this->session = session();
+        
+    }
 
 		public function agregar_carrito(){
 			$request = \Config\Services::request();
 			$cart = \Config\Services::cart();
-
+				
 				$cart->insert(array(
                     'id'      => $request->getPost('id_producto'),
                     'qty'     => 1,
@@ -50,6 +56,12 @@ class Carrito_controller extends BaseController{
 			$cart->destroy();
 
 			return redirect()->route('ver_carrito');
+
+		}
+
+		public function comprar(){
+			$cart = \Config\Services::cart();
+
 
 		}
 	

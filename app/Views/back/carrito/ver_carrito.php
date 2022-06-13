@@ -30,12 +30,12 @@
                         <td class="text-center"><?php echo $carrito['qty']?></td>
                         <td class="text-center">$<?php echo $carrito['subtotal']; $total = $total + $carrito['subtotal']?></td>
                         
-
+                        
                         <td class="text-center"><a href="<?php  echo base_url('eliminar_producto_carrito?rowid='.$carrito['rowid']); ?>" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i>Eliminar</a></td>
 
 
-                    <?php } ?>
                     </tr>
+                    <?php } ?>
                 </div>
 
                 </tbody>
@@ -49,8 +49,9 @@
 
 
            <div class="totalcompra text-center">
-           <h4>Total del compra: $<?php echo $total ?> 
-           <td class="text-center"><a href="" class="btn btn btn-success"><i class="fa-solid fa-xmark"></i>Comprar</a></td> </h4>
+           <h4>Total del compra: $<?php echo $total ?>
+         
+            <td class="text-center"><a href="<?php echo base_url('comprar')?>" class="btn btn btn-success"><i class="fa-solid fa-xmark"></i>Comprar</a></td> </h4>
            </div>
             <br>    
             <br>
