@@ -1,0 +1,56 @@
+.card h5{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 2rem;
+    text-align: center;
+    font-weight: 100;
+
+}
+#add_usuario{
+	margin: 0 auto !important;
+}
+label{
+	font-family: 'Gloria Hallelujah', cursive;
+
+}
+input{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+button {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+a{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+p{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+.loggin h2 {
+
+	color: white;
+	font-size: 30px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.loggin p {
+	color: white;
+	font-family: 65px;
+	text-align: center;
+}
+
+.container p{
+	text-align: center;
+}
+
+.container h2{
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	color: white;
+}
+
+form label{
+	font-family: 'Gloria Hallelujah', cursive;
+	color: white;
+}
+

@@ -1,0 +1,63 @@
+CRITICAL - 2022-04-11 20:12:10 --> Invalid file: front/pedi-ya.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/pedi-ya.p...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(31): view('front/pedi-ya')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->pedi_ya()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 20:12:13 --> Invalid file: front/quienes-somos.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/quienes-s...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/quienes-s...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(40): view('front/quienes-s...')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->quienes_somos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 20:12:18 --> Invalid file: front/contacto.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/contacto....')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/contacto', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(49): view('front/contacto')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 20:15:14 --> Invalid file: front/quienes-somos.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/quienes-s...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/quienes-s...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(40): view('front/quienes-s...')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->quienes_somos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 21:24:22 --> Invalid file: front/quienes-somos.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/quienes-s...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/quienes-s...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(40): view('front/quienes-s...')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->quienes_somos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 21:48:44 --> Invalid file: front/quienes-somos.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/quienes-s...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/quienes-s...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(40): view('front/quienes-s...')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->quienes_somos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 21:58:38 --> Invalid file: front/pedi-ya.php
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/pedi-ya.p...')
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(31): view('front/pedi-ya')
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->pedi_ya()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

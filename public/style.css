@@ -1,0 +1,35 @@
+p{
+    font-family: cursive;/*tipo de letras*/
+   text-align: center;/*alineación del texto*/
+   color: yellow; /*color de la fuente*/
+   font-size:24 px;/*tamaño de la fuente*/
+   font-style: italic; /*estilo */
+   font-weight: 900; /* negrito o fuerte*/
+}
+body {
+   background-color: lightblue; /*color de fondo del body*/
+}
+   /* color y alineación de la etiqueta h1*/
+/*h1 {
+    color: white;
+    font-weight: bold; negrito o fuerte
+    text-align: center;alineación
+}*/
+
+.titulo {color: red;
+        font-family: fantasy;
+        text-align: left;
+        font-size: 50px;
+}
+
+.parrafo{text-align: justify;
+         color: green;
+         font-style: oblique;
+}
+
+.titulo-2{color: green;
+          font-size: 40px;
+          font-family: cursive;}
+    
+
+   

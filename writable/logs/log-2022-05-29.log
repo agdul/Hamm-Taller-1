@@ -1,0 +1,10 @@
+CRITICAL - 2022-05-29 23:49:14 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/loggin', Array, true)
+#3 C:\xampp\htdocs\Hamm\app\Controllers\Home.php(29): view('front/loggin')
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Home->loggin()
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

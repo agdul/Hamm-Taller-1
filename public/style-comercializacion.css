@@ -1,0 +1,9 @@
+.container h1, p {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+

@@ -1,0 +1,22 @@
+.container h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+}
+
+.container p, a, strong {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+}
+
+.container-sm ul{
+	font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+    list-style: none;
+}
+
+
+
+
+li{
+    list-style: none;
+}
