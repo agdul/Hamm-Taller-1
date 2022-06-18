@@ -14,7 +14,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <?php echo session()->getFlashdata('failed') ?>
                     </div>
-                <?php endif; ?>
+                <?php endif; ?> 
 
                 <?php $validation =  \Config\Services::validation(); ?>
                 <form action="<?= base_url('login') ?>" method="post">
@@ -29,7 +29,7 @@
                         <div class="card-body p-5">
                             <div class="form-group pt-3">
                                 <label for="email"> Email </label>
-                                <input type="text" class="form-control <?php if ($validation->getError('email')) : ?>is-invalid<?php endif ?>" name="email" placeholder="Email" value="<?php echo set_value('email'); ?>" />
+                                <input type="text" class="form-control <?php if ($validation->getError('email')) : ?>is-invalid<?php endif ?>" name="email" placeholder="algo@algo.algo" value="<?php echo set_value('email'); ?>" />
                                 <?php if ($validation->getError('email')) : ?>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('email') ?>
@@ -39,7 +39,7 @@
 
                             <div class="form-group pt-3">
                                 <label for="pass"> Password </label>
-                                <input type="password" class="form-control <?php if ($validation->getError('pass')) : ?>is-invalid <?php endif ?>" name="pass" placeholder="Password" value="<?php echo set_value('pass'); ?>" />
+                                <input type="password" class="form-control <?php if ($validation->getError('pass')) : ?>is-invalid <?php endif ?>" name="pass" placeholder="**********" value="<?php echo set_value('pass'); ?>" />
                                 <?php if ($validation->getError('pass')) : ?>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('pass') ?>

@@ -8,10 +8,10 @@
                                 <?php echo session()->getFlashdata('success') ?>
                                 <button type="button" class="btn-close flex-row-reverse" data-bs-dismiss="alert"></button>
                             </div>
-                        <?php elseif(session()->getFlashdata('failed')):?>
+                        <?php elseif(session()->getFlashdata('failed_agregar')):?>
                             <div class="alert alert-danger alert-dismissible">
                                 <button type="button" class="btn-close flex-row-reverse" data-bs-dismiss="alert"></button>
-                                <?php echo session()->getFlashdata('failed') ?>
+                                <?php echo session()->getFlashdata('failed_agregar') ?>
                             </div>
                     <?php endif; ?>
         <div class="card-header text-center">

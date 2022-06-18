@@ -86,3 +86,7 @@ div .container__ {
 #fb :hover{
 	color: #1778F2;
 }
+
+#precioProducto p :hover{
+	color: red;
+}

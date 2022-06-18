@@ -1,0 +1,126 @@
+CRITICAL - 2022-06-18 00:02:00 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\Hamm\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(154): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs...', '1655528520_6f63...')
+#2 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-18 01:18:16 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\Hamm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Hamm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-18 01:23:29 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\Hamm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Hamm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-18 01:32:25 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(138): view('back/producto/e...', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->editar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-18 01:42:17 --> Undefined variable: datos
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(192): view('back/producto/e...', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-18 01:43:12 --> Undefined variable: datos
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(193): view('back/producto/e...', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-18 01:43:19 --> Undefined variable: datos
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(193): view('back/producto/e...', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-18 01:44:27 --> Undefined variable: datos
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(193): view('back/producto/e...', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-18 02:05:14 --> Undefined variable: validation
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(194): view('back/producto/e...', Array, Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-18 02:09:17 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-18 02:09:54 --> Undefined variable: errores
+#0 C:\xampp\htdocs\Hamm\app\Views\back\producto\editar_producto.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(194): view('back/producto/e...', Array, Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-18 02:28:36 --> syntax error, unexpected '=', expecting end of file
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(194): view('back/producto/e...', Array, Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-18 02:47:36 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('back/producto/e...', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(195): view('back/producto/e...', Array, Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->actualizar_producto()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

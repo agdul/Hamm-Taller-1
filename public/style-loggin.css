@@ -49,9 +49,9 @@ p{
 	color: white;
 }
 
-form label{
+.form-grup form label{
 	font-family: 'Gloria Hallelujah', cursive;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 .container h3{
@@ -64,4 +64,22 @@ form label{
 	
 	font-family: 'Gloria Hallelujah', cursive;
 	color: black;
+}
+.row .col-12 {
+	font-family: 'Gloria Hallelujah', cursive;
+	color: white;
+}
+#errores_producto{
+	list-style-type: none !important; 
+	list-style: none !important;
+	text-align: center;
+	color: white;
+	
+}
+
+.mt-4 h4{
+	font-family: 'Gloria Hallelujah', cursive;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
 }

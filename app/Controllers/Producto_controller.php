@@ -97,7 +97,7 @@ class Producto_controller extends BaseController{
             }else{
                 $datos["errores"] = $this->validator->getErrors();
                 $data['titulo']='ERROR';
-                session()->setFlashdata('failed', 'No se puedo agregar el producto');
+                session()->setFlashdata('failed_agregar', 'No se puedo agregar el producto');
                 echo view('front/head', $data); 
                 echo view('front/titulo_panel_productos');
                 echo view('front/navbar_adm');
@@ -129,32 +129,81 @@ class Producto_controller extends BaseController{
 
 
     public function editar_producto(){
-            $data['titulo']='EDITAR PRODUCTO';
-            $idProducto = $this->request->getPostGet('id_producto');
-        
-            $productos = new Productos_models();
-            $datos =array('datos' => $productos->where('id_producto',$this->request->getPostGet('id_producto'))->first());
+        $data['titulo']='EDITAR PRODUCTO';
+        $idProducto = $this->request->getPostGet('id_producto');
     
-            return view('front/head', $data).view('front/titulo_panel_productos').view('front/navbar_adm').view('back/producto/editar_producto', $datos).view('front/footer');
-        
+        $productos = new Productos_models();
+        $datos =array('datos' => $productos->where('id_producto',$this->request->getPostGet('id_producto'))->first());
+
+        return view('front/head', $data).view('front/titulo_panel_productos').view('front/navbar_adm').view('back/producto/editar_producto', $datos).view('front/footer');
     }
 
     public function actualizar_producto(){
+        $validacion = \Config\Services::validation();
         $producto_model = new Productos_models();
-        
-        $datos = $this->request->getPost();
 
+        $datos = $this->request->getPostGet();
         $img_nueva = $this->request->getFile('img_producto');
-        var_dump($img_nueva);
-        if($img_nueva->isValid()){
-            $datos ['img_producto'] = $img_nueva->getName();
-            $img_nueva->move(ROOTPATH.'assets/uploads');
-        }
+        $img_nuevo_nombre = $img_nueva->getRandomName();
+
+
+        $validacion = $this->validate([
+            "id_producto" => "required",
+            "categoria_id" => "required",
+            "nombre_producto" => "required",
+            "precio_producto" => "required",
+            "stock_producto" => "required",
+            "descripcion_producto" => "required",
+            "img_producto" => "uploaded[img_producto]|max_size[img_producto,4096]|is_image[img_producto]" 
+        ], 
+        [   "categoria_id" => [
+                "required" => "Debe ingresar un categoria."
+            ],
+            "nombre_producto" => [
+                "required" => "Debe ingresar una nombre."
+            ],
+            "precio_producto" => [
+                "required" => "Debe ingresar un precio."
+            ],
+            "stock_producto" => [
+                "required" => "Debe ingresar el stock."
+            ],
+            "descripcion_producto" => [
+                "required" => "Debe ingresar una descripción."
+            ],
+            "img_producto" => ["uploaded"=>"Debe ingresar una imagen.","max_size"=>"Debe ingresar una imagen mas chica.","is_image"=>"Debe ingresar una imagen jpg/png."]
+        ]);
+
+
+
+        if($img_nueva->isValid() && $validacion){
+            $datos ['img_producto'] = $img_nuevo_nombre;
+            $img_nueva->move(ROOTPATH.'assets/uploads', $img_nuevo_nombre);
+            $id_modificar = $producto_model->where('id_producto', $this->request->getPost('id_producto'))->first();
+            $producto_model->update($id_modificar, $datos);
+            return redirect()->to(base_url('panel_productos'));
+        }else{
+            
+                $arryproduc =array('datos'=> $producto_model->where('id_producto', $this->request->getPost('id_producto'))->first());
+
+                $datos_e["errores"] = $this->validator->getErrors();
+                $data['titulo']='ERROR';
+                session()->setFlashdata('failed_editar', 'No se puedo editar el producto, faltan rellenar campos');
+                echo view('front/head', $data); 
+                echo view('front/titulo_panel_productos');
+                echo view('front/navbar_adm');
+                echo view('back/producto/editar_producto', $arryproduc, $datos_e);
+                echo view('front/footer');
+
+
+            //return redirect()->to(base_url('panel_productos'));
         
-        $id_modificar = $producto_model->where('id_producto', $this->request->getPost('id_producto'))->first();
-        $producto_model->update($id_modificar, $datos);
-        return redirect()->to(base_url('panel_productos'));
-    }
+        
+        //var_dump($datos);
+        //var_dump($this->request->getPostGet('id_producto'));
+        }
+
+    }   
 
     public function restaurar_producto(){
         $producto_model = new Productos_models();

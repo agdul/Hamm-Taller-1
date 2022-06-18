@@ -1,0 +1,151 @@
+CRITICAL - 2022-06-15 17:07:59 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-15 17:10:26 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-15 17:10:28 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-15 17:10:29 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-15 17:13:23 --> Undefined variable: productoo
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 17:13:25 --> Undefined variable: productoo
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 17:20:28 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-15 17:21:45 --> Undefined variable: producto
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 17:21:48 --> Undefined variable: producto
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 17:21:56 --> Undefined variable: producto
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 17:22:21 --> Undefined variable: producto
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 17:22:25 --> Undefined variable: producto
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 17:24:51 --> Undefined variable: productoo
+#0 C:\xampp\htdocs\Hamm\app\Views\front\pedi-ya.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\Hamm\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#4 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#6 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#7 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 18:15:24 --> syntax error, unexpected '<'
+#0 C:\xampp\htdocs\Hamm\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Hamm\system\Common.php(1089): CodeIgniter\View\View->render('front/pedi-ya', Array, true)
+#2 C:\xampp\htdocs\Hamm\app\Controllers\Producto_controller.php(187): view('front/pedi-ya', Array)
+#3 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(832): App\Controllers\Producto_controller->mostrar_productos()
+#4 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-15 18:47:51 --> Undefined variable: totalTime
+#0 C:\xampp\htdocs\Hamm\system\Debug\Toolbar\Views\toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\Hamm\system\Debug\Toolbar.php(501): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Hamm\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\xampp\htdocs\Hamm\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#4 C:\xampp\htdocs\Hamm\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\xampp\htdocs\Hamm\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#6 C:\xampp\htdocs\Hamm\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

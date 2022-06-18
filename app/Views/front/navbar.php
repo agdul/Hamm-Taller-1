@@ -8,12 +8,21 @@
     		</button>
     	<div class="collapse navbar-collapse" id="collapsibleNavbar">
       	<ul class="navbar-nav">
+
+			<li class="nav-item">
+				<a class="nav-link" href="<?php echo base_url('login');?>">Login</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="<?php echo base_url('register');?>">Registrate</a>
+			</li>
+
+
+
         	<li class="nav-item">
           		<a class="nav-link" href="<?php echo base_url('quienes_somos');?>">Quienes somos?</a>
         	</li>
-        	<li class="nav-item">
-         		<a class="nav-link" href="<?php echo base_url('login');?>">Login</a>
-        	</li>
+
         	<li class="nav-item">
           		<a class="nav-link" id="nav3" href="<?php echo base_url('comercializacion');?>">Comercialización</a>
         	</li>

@@ -108,3 +108,13 @@ body{
 #venta{
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+
+#precioProducto p:hover{
+	color: rgb(253, 143, 0);
+}
+
+#unProducto{
+    background-color: #d3bfac8a;
+    box-shadow: 0 0 30px 2px #252525;
+}

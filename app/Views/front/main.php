@@ -1,5 +1,22 @@
-
 <div class="container my-5" id="main">
+<?php
+
+use CodeIgniter\Database\Query;
+
+                        $db = \Config\Database::connect();
+                        if(session()->getFlashdata('logIN')):?>
+                            <div class="justify-content-center alert alert-warning alert-dismissible fade show text-center" role="alert">
+                                <strong><?php echo session()->get("nombre")?>!</strong> <?php echo session()->getFlashdata('logIN')?>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                        <?php elseif(session()->getFlashdata('failed')):?>
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="btn-close flex-row-reverse" data-bs-dismiss="alert"></button>
+                                <?php echo session()->getFlashdata('failed') ?>
+                            </div>
+                    <?php endif; ?>
+
+
 
 
     <div id="demo" class="carousel slide" data-bs-ride="carousel">

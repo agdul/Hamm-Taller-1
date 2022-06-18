@@ -21,7 +21,7 @@ class Usuario_controller extends BaseController{
     //Metodo Que RETORNA La VISTA del REGISTRO_usuario
     public function register(){
         $data['titulo']='Registrarse';
-        return view('front/head', $data).view('front/navbar').view('front/registrarse').view('front/footer');
+        return view('front/head', $data).view('front/titulo').view('front/navbar').view('front/registrarse').view('front/footer');
 
 	}
     //Metodo Que CREAR Usuario con las validaciones 
@@ -35,11 +35,31 @@ class Usuario_controller extends BaseController{
             'usuario'  => 'required|min_length[3]',
             'pass'     => 'required|min_length[3]|max_length[10]'
 
-        ]);
+        ],
+        [
+       'nombre' => [
+           'required' => 'Debe ingresar un nombre.'
+        ],
+       'apellido' => [
+        'required' => 'Debe ingresar un apellido.'
+        ],
+        'direccion' => [
+            'required' => 'Debe ingresar un direccion.'
+        ],
+        'usuario' => [
+            'required' => 'Debe ingresar un usuario.'
+        ],
+        'email' => [
+            'required' => 'Debe ingresar un email.' //agregar array de errores para email en uso
+        ],
+        'pass' => [
+            'required' => 'Debe ingresar un password.'
+        ]
+            ]);
         //Si NO pasa el VALIDATE retorna las vistas con los errores
 		if (!$inputs) {
             $data['titulo']='Registrarse';
-			return view('front/head', $data).view('front/navbar').view('front/registrarse', ['validation' => $this->validator]).view('front/footer');
+			return view('front/head', $data).view('front/titulo').view('front/navbar').view('front/registrarse', ['validation' => $this->validator]).view('front/footer');
 		}
         //Sino Guarda
 		$this->user->save([
@@ -128,13 +148,18 @@ class Usuario_controller extends BaseController{
         $data['titulo']='ADM';
         $datos['consultas'] = $consulta_model->orderBy('id_consulta','asc')->findAll();    
 		return view('front/head', $data).view('front/titulo_panel_consulta').view('front/navbar_adm').view('back/consulta/ver_consulta',$datos).view('front/footer');
+
         }else{ //sino
+
             return redirect()->to(site_url('dashboard_usuario'));
         }
 	}
     //metodo VISTA de Usuario
     public function dashboard_usuario(){
+        $this->session = session();
         $data['titulo']='Bienvenido';
+        $nombre = session()->get('nombre');
+        session()->setFlashdata('logIN', 'Bienvenido a Roll UP & WRAPS.');
 		return view('front/head', $data).view('front/titulo').view('front/navbar_user',).view('front/main').view('front/footer_user');
 	}
 
