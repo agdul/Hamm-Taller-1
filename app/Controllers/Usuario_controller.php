@@ -18,15 +18,17 @@ class Usuario_controller extends BaseController{
            $this->user = new Usuarios_models();
            $this->session = session();
 	}
+
     //Metodo Que RETORNA La VISTA del REGISTRO_usuario
     public function register(){
         $data['titulo']='Registrarse';
         return view('front/head', $data).view('front/titulo').view('front/navbar').view('front/registrarse').view('front/footer');
 
 	}
+
     //Metodo Que CREAR Usuario con las validaciones 
-    public function create()
-	{
+    public function create(){
+
 		$inputs = $this->validate([
             'nombre'   => 'required|min_length[3]',
             'apellido' => 'required|min_length[3]|max_length[25]',
@@ -217,15 +219,58 @@ class Usuario_controller extends BaseController{
     public function actualizar_user(){
         $usuario_model = new Usuarios_models();
         $id_modificar = $usuario_model->where('id', $this->request->getPost('id'))->first();
-        $data_actualizada = array(
-            'nombre' => $this->request->getPost('nombre'),
-            'apellido' => $this->request->getPost('apellido'),
-            'email' => $this->request->getPost('email')
-        );
 
-        $data_actualizada ['id'] = $usuario_model->find($this->request->getPost('id'));
-        $usuario_model->save($data_actualizada);
-        return redirect()->to(base_url('panel_usuarios'));
+
+        $validacion = $this->validate([
+            'nombre'   => 'required|min_length[3]',
+            'apellido' => 'required|min_length[3]|max_length[25]',
+            'direccion' => 'required|min_length[3]',
+            'email'    => 'required|min_length[4]|max_length[100]|valid_email',
+            'usuario'  => 'required|min_length[3]'
+        ],
+        [
+       'nombre' => [
+           'required' => 'Debe ingresar un nombre.'
+        ],
+       'apellido' => [
+        'required' => 'Debe ingresar un apellido.'
+        ],
+        'direccion' => [
+            'required' => 'Debe ingresar un direccion.'
+        ],
+        'usuario' => [
+            'required' => 'Debe ingresar un usuario.'
+        ],
+        'email' => [
+            'required' => 'Debe ingresar un email.' //agregar array de errores para email en uso
+        ]
+            ]);
+
+
+        if ($validacion) {
+            $data_actualizada = array(
+                'nombre' => $this->request->getPost('nombre'),
+                'apellido' => $this->request->getPost('apellido'),
+                'direccion' => $this->request->getPost('direccion'),
+                'usuario' => $this->request->getPost('usuario'),
+                'email' => $this->request->getPost('email')
+            );
+            
+            $data_actualizada ['id'] = $usuario_model->find($this->request->getPost('id'));
+            $usuario_model->save($data_actualizada);
+            return redirect()->to(base_url('panel_usuarios'));
+        } else{
+
+                $datos =array('datos' => $usuario_model->where('id',$this->request->getPostGet('id'))->first());
+
+                $datos_e["errores"] = $this->validator->getErrors();
+                $data['titulo']='ERROR';
+                return view('front/head', $data).view('front/titulo_panel_usuario').view('front/navbar_adm').view('back/usuario/editar_usuario',$datos,$datos_e).view('front/footer');
+        
+        
+            
+
+        }
     }
 
     public function editar_user(){

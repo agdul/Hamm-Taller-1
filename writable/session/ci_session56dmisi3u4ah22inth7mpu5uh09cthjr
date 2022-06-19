@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1655609532;_ci_previous_url|s:38:"http://localhost/Hamm/editar_user?id=7";id|s:2:"12";nombre|s:3:"adm";apellido|s:3:"adm";direccion|s:3:"adm";usuario|s:3:"adm";email|s:13:"adm@admin.adm";perfil_id|s:1:"1";loggedIn|b:1;failed_editar|s:54:"No se puedo editar el producto, faltan rellenar campos";__ci_vars|a:1:{s:13:"failed_editar";s:3:"new";}

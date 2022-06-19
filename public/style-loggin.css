@@ -83,3 +83,14 @@ p{
 	text-align: center;
 	font-size: 2rem;
 }
+
+.card-header h5{	
+	font-family: 'Gloria Hallelujah', cursive;
+	color: black;
+}
+
+.card-body label{
+
+	font-family: 'Gloria Hallelujah', cursive;
+	color: black;
+}

@@ -35,6 +35,7 @@
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
+            <th scope="col">Direccion</th>
             <th scope="col">Usuario</th>
             <th scope="col">Email</th>
             <th scope="col">Operaciones</th>
@@ -49,6 +50,7 @@
             <th scope="row"><?php echo $dato['id']; ?></th>
             <td><?php echo $dato['nombre']; ?></td>
             <td><?php echo $dato['apellido']; ?></td>
+            <td><?php echo $dato['direccion']; ?></td>
             <td><?php echo $dato['usuario']; ?></td>
             <td><?php echo $dato['email']; ?></td>
 

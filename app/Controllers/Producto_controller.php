@@ -15,6 +15,8 @@ class Producto_controller extends BaseController{
         $this->session = session();
     }
 
+    
+
     public function panel_productos() {
         $producto_model = new Productos_models();
         $datos['productos'] = $producto_model->orderBy('id_producto','ASC') -> findAll();
