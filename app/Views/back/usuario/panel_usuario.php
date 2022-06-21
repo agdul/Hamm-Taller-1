@@ -1,4 +1,23 @@
 <table class="table table-dark table-striped-columns">
+
+
+<?php
+                        if(session()->getFlashdata('success')):?>
+                            <div class="alert alert-success alert-dismissible">
+                
+                                <?php echo session()->getFlashdata('success')?>
+                                
+                                <button type="button" class="btn-close flex-row-reverse" data-bs-dismiss="alert"></button>
+                            </div>
+                        <?php elseif(session()->getFlashdata('failed')):?>
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="btn-close flex-row-reverse" data-bs-dismiss="alert"></button>
+                                <?php echo session()->getFlashdata('failed') ?>
+                            </div>
+                    <?php endif; ?>
+
+
+
     <thead>
         <tr>
         <a href="<?php echo base_url('eliminados_usuario'); ?>" class="btn btn-secondary btn-sm"><i>

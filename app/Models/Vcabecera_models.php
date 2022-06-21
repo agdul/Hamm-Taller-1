@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class Vcabecera_models extends Model{
     protected $table = 'ventas_cabecera';
-    protected $primaryKey = 'id_cabecera';
+    protected $primaryKey = 'id_venta_cabecera';
     protected $allowedFields = ['usuario_id','total_venta'];
     
 

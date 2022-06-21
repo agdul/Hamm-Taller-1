@@ -14,7 +14,28 @@ class Carrito_controller extends BaseController{
 		public function agregar_carrito(){
 			$request = \Config\Services::request();
 			$cart = \Config\Services::cart();
-				
+			//$productos_model new Productos_models();
+			$poductos = $cart->contents();
+			foreach($poductos as $producto){
+				if($producto['id'] == $request->getPost('id_producto')){
+					$cantidad = $producto['qty'];
+					$cantidadMax = $request->getPost('stock_producto');
+
+					if($cantidad<$cantidadMax){
+						$cart->update(array(
+							'rowid' => $producto['rowid'],
+							'qty' => $cantidad + 1
+						));
+					}
+
+					session()->setFlashdata('success', 'Producto agregado al carrito');
+					return redirect()->route('pedi_ya');
+				} else{
+					session()->setFlashdata('failed', 'Error no hay mas stock, LO SIENTOO!');
+					return redirect()->route('pedi_ya');
+				}
+			}
+			
 				$cart->insert(array(
                     'id'      => $request->getPost('id_producto'),
                     'qty'     => 1,
@@ -24,7 +45,7 @@ class Carrito_controller extends BaseController{
 
 
 				
-			session()->setFlashdata('success', 'Producto agregado al carrito');
+			
 			return redirect()->route('pedi_ya');
 		}
 
@@ -59,11 +80,6 @@ class Carrito_controller extends BaseController{
 
 		}
 
-		public function comprar(){
-			$cart = \Config\Services::cart();
-
-
-		}
 	
 
 

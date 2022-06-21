@@ -14,6 +14,23 @@
 
 
 
+    
+
+    <?php
+                if (session()->getFlashdata('compra_ok')) : ?>
+    <div class="alert alert-success alert-dismissible text-center">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <?php echo session()->getFlashdata('compra_ok') ?>
+    </div>
+    <?php elseif (session()->getFlashdata('compra_no')) : ?>
+    <div class="alert alert-danger alert-dismissible text-center">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <?php echo session()->getFlashdata('compra_no') ?>
+    </div>
+    <?php endif; ?>
+
+
+
 
 
 
@@ -44,9 +61,10 @@
                             echo form_hidden('id_producto', $producto['id_producto']);
                             echo form_hidden('nombre_producto', $producto['nombre_producto']);
                             echo form_hidden('precio_producto', $producto['precio_producto']);
+                            echo form_hidden('stock_producto', $producto['stock_producto']);
                             echo form_submit('agregar_carrito', 'Agregar al carrito', "class='text-center btn btn-outline-dark btn4'"); 
-                            
-                            echo form_close();} else{
+                            echo form_close();
+                        }else{
                             echo form_open('login');  
                             echo form_submit('login', 'Comprar Ya!', "class='text-center btn btn-outline-dark btn4' ");
                             echo form_close();

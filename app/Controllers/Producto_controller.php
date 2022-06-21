@@ -241,5 +241,4 @@ class Producto_controller extends BaseController{
     }
 
 
-
 }

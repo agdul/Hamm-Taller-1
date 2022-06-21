@@ -1,7 +1,26 @@
 
 <div class="container">
+
+
+<?php
+                        if(session()->getFlashdata('compra_ok')):?>
+                            <div class="alert alert-success alert-dismissible">
+                
+                                <?php echo session()->getFlashdata('compra_ok')?>
+                                
+                                <button type="button" class="btn-close flex-row-reverse" data-bs-dismiss="alert"></button>
+                            </div>
+                        <?php elseif(session()->getFlashdata('compra_no')):?>
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="btn-close flex-row-reverse" data-bs-dismiss="alert"></button>
+                                <?php echo session()->getFlashdata('compra_no') ?>
+                            </div>
+                    <?php endif; ?>
+
+
 	  <div class="titulo"><br>
 	  	<h2 class="verlasconsultas text-center ">Carrito de compras</h2>
+        
        <div class="row">
            <div class="col-lg-12">
             
