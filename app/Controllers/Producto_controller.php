@@ -94,7 +94,6 @@ class Producto_controller extends BaseController{
                 return redirect()->to(site_url('/panel_productos'))->withInput()->with('previewImage', $nombre_img);
                 //return redirect()->to(base_url('panel_productos'));
 
-            
                 
             }else{
                 $datos["errores"] = $this->validator->getErrors();
